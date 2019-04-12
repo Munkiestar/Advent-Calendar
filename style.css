@@ -1,0 +1,61 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #ccc;
+	margin-top: 3rem;
+}
+
+.btn-start{
+	margin-bottom: 3rem;
+	padding: 1rem;
+	background-color: #db6c1c;
+	color: #fff;
+	font-size: 1rem;
+	border: 2px solid #512751;
+	border-radius: 15px;
+	margin: 15px auto;
+	display: block;
+	width: 10rem;
+	height: 3rem;
+	cursor: pointer;
+	outline: none;
+}
+
+.container{
+	width: 800px;
+	height: 900px;
+	background-image: url('./img/calendar.jpg');
+	background-size: cover;
+	background-position: center;
+	box-shadow: 6px 6px 20px gray;
+	border: 5px solid #000;
+	margin: 15px auto;
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-areas: 
+	 "door9 door6 door11 door7"
+    "door3 door20 door16 door2"
+    "door14 door12 door19 door15"
+    "door22 door1 door5 door23"
+    "door17 door10 door24 door21"
+    "door8 door18 door4 door13";
+}
+
+.image{
+	background-image: none;
+	background-position: center;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.text{
+	height: 100%;
+	width: 100%;
+	color: #f4bb90;
+	padding: 10px;
+	border: 2px solid #000;
+	transition: opacity 2.5s;
+}
